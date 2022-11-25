@@ -39,9 +39,12 @@ header .navbar-middle  {
   display: inline;
   padding: 2rem;
 }
-.navbar-middle ul li a {
+.navbar-middle ul li a{
   color: var(--bg-color);
   font-size: 1.6rem;
+  text-decoration: none;
+}
+.navbar-middle ul li a {
   text-decoration: none;
 }
 
@@ -57,29 +60,32 @@ header .navbar-middle  {
 }
 
 header .navbar-right {
- 
   margin: auto 0;
   margin-left: -6rem;
   }
 
   header .navbar-right .button {
-    width: 132px;
+    width: 125px;
+    padding: 4px 1px 4px 8px;
     background: var(--bg-color);
     border-radius: 15px;
+    
   }
-  header .navbar-right .button p {
-    padding: .4rem;
+  header .navbar-right .button a {
     text-align: center;
-    color: rgba(245, 245, 245, 1);
-    font-size: 1.3rem;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding-left: 30px;
+    
   }
 
   main {
     top: 90rem;
   }
   .prominence {
-    width: 100vw;
     position: absolute;
+    width: 100vw;
     height: 70rem;
     background: rgba(245, 245, 245, 1);
     margin: 27rem 0 0 0;
@@ -97,6 +103,7 @@ header .navbar-right {
     
   }
   .prominence p {
+    position: absolute;
     padding: .1rem 20rem 55rem 20rem;
     justify-content: center;
     color: var(--bg-color);
@@ -186,18 +193,18 @@ header .navbar-right {
   .main-new p {
     position: relative;
     padding: 65px 60px 10px 65px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 25px;
     color: var(--bg-color);
-    text-align: justify ;
+    text-align: justify;
   }
 
   .latest-posts {
     position: relative;
     margin: 0 auto;
     width: 76rem;
-    height: 57rem;
-    top: 85.7rem;
+    height: 60rem;
+    top: 80.7rem;
     background-color: rgba(255, 255,255, 1);
   }
 
@@ -240,8 +247,8 @@ header .navbar-right {
     display: inline-flex;
     font-size: 18px;
     color: var(--bg-color);
-    margin-left: 8.4rem;
-    top: -8rem;
+    margin-left: 6.5rem;
+    top: -10rem;
     text-decoration: none;
   }
 
@@ -249,7 +256,7 @@ header .navbar-right {
     position: relative;
     color: var(--bg-color);
     font-size: 1.1rem;
-    top: -6.8rem;
+    top: -10.6rem;
     left: 8.5rem;
     text-decoration: none;
   }
@@ -380,8 +387,10 @@ header .navbar-right {
   }
 
   footer p, .thayy {
+    position: relative;
     color: rgb(255, 255, 255);
-    font-size: 25px;
-    padding: 20px 0 0 2px;
+    font-size: 22px;
+    padding: 1px;
+    top: 50px;
     text-transform: none;
   }
