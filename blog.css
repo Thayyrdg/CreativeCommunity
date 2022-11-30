@@ -59,25 +59,27 @@ header .navbar-middle  {
   background: var(--bg-color);
 }
 
-header .navbar-right {
+.navbar-right {
   margin: auto 0;
   margin-left: -6rem;
+  
   }
 
-  header .navbar-right .button {
+  .button {
+    position: relative;
+    z-index: 99;
     width: 125px;
     padding: 4px 1px 4px 8px;
     background: var(--bg-color);
     border-radius: 15px;
     
   }
-  header .navbar-right .button a {
+  .navbar-right .button a {
     text-align: center;
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
     padding-left: 30px;
-    
   }
 
   main {
@@ -105,7 +107,6 @@ header .navbar-right {
   .prominence p {
     position: absolute;
     padding: .1rem 20rem 55rem 20rem;
-    justify-content: center;
     color: var(--bg-color);
     font-size: 1.5rem;
     word-wrap: break-word;
@@ -192,8 +193,9 @@ header .navbar-right {
 
   .main-new p {
     position: relative;
-    padding: 65px 60px 10px 65px;
-    font-size: 1.2rem;
+    display: block;
+    padding: 63px 30px 10px 68px;
+    font-size: 1.1rem;
     line-height: 25px;
     color: var(--bg-color);
     text-align: justify;

@@ -87,14 +87,14 @@ body#login-page {
   color: rgba(255, 255,255, 1);
 }
 
-.buttons a#log {
+.buttons p{
   color: var(--bg-color);
   font-size: 1.3rem;
 }
 
 .login-icons {
   position: relative;
-  top: 5rem;
+  top: 3rem;
   padding: 2rem;
 }
 .login-icons img {
