@@ -12,15 +12,17 @@ $color-white: rgba(255, 255, 255, 1);
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-family: "Questrial", sans-serif;
-  line-height: 80px;
+  line-height: 120px;
 }
 
-h3 {
+h2 {
   margin: 2vh 0;
-  font-size: 1,5rem;
+  font-size: 1.6rem;
   font-family: "Rajdhani", sans-serif;
+  line-height: 55px;
+  font-weight: lighter;
 }
 
 .container {
@@ -33,4 +35,10 @@ h3 {
   a {
     font-family: "Questrial", sans-serif;
   }
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }

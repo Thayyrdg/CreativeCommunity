@@ -12,7 +12,6 @@ html, body {
   margin: 0;
   width: 100%;
   min-height: 100vh;
-  background: red;
 }
 
 .header {
@@ -31,16 +30,20 @@ html, body {
     grid-template-columns: 60% 40%;
     grid-template-rows: auto;
     display: grid;
+
     .navbar-left {
       // navbar content left
     }
+
     .navbar-right {
       // navbar content right
     }
+
     .navbar-items {
       ul {
         li {
           display: inline-block;
+
           a {
             font-size: 1.5rem;
             padding: 12px 16px;
@@ -50,6 +53,7 @@ html, body {
             border-bottom: 2px solid transparent;
             transition: border-bottom .4s ease;
             display: block;
+
             &:hover {
               border-bottom: 2px solid $color-white;
             }
@@ -67,9 +71,57 @@ section.page {
   height: auto;
 
   &#home {
-    padding: 30vh 0;
+    padding: 10vh 0;
     margin: 0;
     height: 100vh;
     background: rgba(4, 22, 33, 1);
+
+    .row {
+      height: 80vh;
+      display: grid;
+      grid-template-columns: 10vw 60vw 30vw;
+      grid-template-rows: auto;
+    }
+
+    .col {
+      padding: 0;
+      margin: 0;
+      position: relative;
+      &.col-left {
+        hr {
+          width: 2px;
+          height: 20vh;
+          border: 0;
+          background: $color-white;
+          &:first-child {
+            position: absolute;
+            top: 0;
+          }
+          &:last-child {
+            position: absolute;
+            bottom: 0;
+          }
+        }
+        .social {
+          font-size: 2.5rem;
+          a {
+            margin: 50px 0;
+            color: $color-white;
+            text-decoration: none;
+            display: block;
+          }
+        }
+      }
+
+      &.col-middle {
+      }
+
+      &.col-right {
+        justify-content: left;
+        img {
+          width: 30%
+        }
+      }
+    }
   }
 }
