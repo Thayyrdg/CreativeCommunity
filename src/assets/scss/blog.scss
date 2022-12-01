@@ -1,0 +1,401 @@
+:root {
+    --bg-color: rgba(4, 22, 33, 1)
+  }
+  
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .wrapper-all {
+    margin: -11px;
+    padding: -1px;
+    box-sizing: border-box;
+    background: rgba(245, 245, 245, 1);
+    box-shadow: 0 0 125px 0 rgb(0, 0, 0);
+    
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    background: rgba(255, 255,255, 1);
+    grid-template-columns: 1rem auto auto;
+    box-shadow: 0 4px 5px #999;
+    z-indeX: 99;
+  }
+  
+  header .navbar-left {
+    margin: 40px 0 40px 180px;
+  }
+  
+  header .navbar-middle  {
+    position: relative;
+    margin: 40px 10px 40px 45rem;
+  }
+  
+  .navbar-middle ul li {
+    display: inline;
+    padding: 2rem;
+  }
+  .navbar-middle ul li a{
+    color: var(--bg-color);
+    font-size: 1.6rem;
+    text-decoration: none;
+  }
+  .navbar-middle ul li a {
+    text-decoration: none;
+  }
+  
+  .navbar-middle .active::after{ 
+    content: " ";
+    position: absolute;
+    width: 6rem;
+    height: 3px;
+    top: 10;
+    bottom: 10px;
+    left: 11.8rem;
+    background: var(--bg-color);
+  }
+  
+  .navbar-right {
+    margin: auto 0;
+    margin-left: -6rem;
+    
+    }
+  
+    .button {
+      position: relative;
+      z-index: 99;
+      width: 125px;
+      padding: 4px 1px 4px 8px;
+      background: var(--bg-color);
+      border-radius: 15px;
+      
+    }
+    .navbar-right .button a {
+      text-align: center;
+      color: white;
+      font-size: 1.2rem;
+      text-decoration: none;
+      padding-left: 30px;
+    }
+  
+    main {
+      top: 90rem;
+    }
+    .prominence {
+      position: absolute;
+      width: 100vw;
+      height: 70rem;
+      background: rgba(245, 245, 245, 1);
+      margin: 27rem 0 0 0;
+    }
+  
+    .prominence .pic {
+      position: relative;
+      width: 77rem;
+      height: 40rem;
+      margin: auto ;
+      top: -5rem;
+      bottom: -5rem;
+      background: rgba(217, 217, 217, 1);
+      border-radius: 6rem;
+      
+    }
+    .prominence p {
+      position: absolute;
+      padding: .1rem 20rem 55rem 20rem;
+      color: var(--bg-color);
+      font-size: 1.5rem;
+      word-wrap: break-word;
+    }
+  
+    section .main-news {
+      position: absolute;
+      margin: 0 auto;
+    }
+  
+    section .main-news-photo {
+      position: relative;
+      margin-left: 40rem;
+    }
+    .thumbnail {
+      position: relative;
+      width: 76rem;
+      height: 30rem;
+      top: 87rem;
+      margin: 0 auto;
+      background: rgba(66, 65, 65, 9);
+      
+      
+    }
+    .thumbnail .main-news-photo img{ 
+      width: 1215px;
+      height: 480px;
+      margin-left: -640px;
+      opacity: 0.2;
+    }
+      
+    .div-h3 {
+      position: absolute;
+      width: 30rem;
+      padding: 5rem;
+      margin-top: -20rem;
+    }
+    .thumbnail h3 {
+      position: relative;
+      color: 
+      rgba(217, 217, 217, 1);
+      font-size: 25px;
+      font-weight: 100;
+    }
+  
+    .news-author {
+      position: relative;
+      top: -10rem;
+      left: 8rem;
+    }
+  
+    .news-author img {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: -3rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  
+    .news-author p {
+      display: flex;
+      padding: 16px 1px 0 10px;
+      font-size: 18px;
+      color: rgba(217, 217, 217, 1);
+    }
+  
+    .main-new {
+      position: relative;
+      margin: 0 auto;
+      width: 76em;
+      height: 50rem;
+      top: 85.7rem;
+      background-color: rgba(255, 255,255, 1);
+      
+    }
+  
+    .main-new img {
+      position: relative;
+      float: left;
+      max-width: 600px; 
+      padding: 70px 30px 10px 70px;
+    }
+  
+    .main-new p {
+      position: relative;
+      display: block;
+      padding: 63px 30px 10px 68px;
+      font-size: 1.1rem;
+      line-height: 25px;
+      color: var(--bg-color);
+      text-align: justify;
+    }
+  
+    .latest-posts {
+      position: relative;
+      margin: 0 auto;
+      width: 76rem;
+      height: 60rem;
+      top: 80.7rem;
+      background-color: rgba(255, 255,255, 1);
+    }
+  
+    .latest-posts h2 {
+      color: var(--bg-color);
+      font-size: 3rem;
+      padding: 150px 0 30px 0;
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    .grid {
+      display: grid;
+      margin: 0 auto;
+      width: 50rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      row-gap: 40px;
+      padding-top: 5rem;
+      
+    }
+  
+    .post-one {
+      display: inline;
+      width: 360px;
+      height: 140px;
+      background: rgb(211, 208, 208);
+     
+    }
+  
+    .latest-post-img {
+      width: 110px;
+      height: 120px;
+      background: rgb(136, 133, 133);
+      margin: 10px;
+    }
+  
+    .post-one p {
+      position: relative;
+      display: inline-flex;
+      font-size: 18px;
+      color: var(--bg-color);
+      margin-left: 6.5rem;
+      top: -10rem;
+      text-decoration: none;
+    }
+  
+    .post-one #read-more {
+      position: relative;
+      color: var(--bg-color);
+      font-size: 1.1rem;
+      top: -10.6rem;
+      left: 8.5rem;
+      text-decoration: none;
+    }
+    .newsletter::before {
+      position: absolute;
+      content: "";
+      width: 116rem;
+      height: .1rem;
+      left: -33rem;
+      top: 5rem;
+      background: rgb(255, 255, 255);
+    }
+    .newsletter {
+      position: relative;
+      text-align: center;
+      margin: 0 auto;
+      background: var(--bg-color);
+      width: 50rem;
+      height: 80rem;
+      top: 90rem;
+    }
+  
+    .newsletter-image img {
+      display: block;
+      margin: auto;
+      padding: 200px 0 0 0;
+      color: white;
+    }
+  
+    .newsletter h3 {
+      color: rgba(255, 255,255, 1);
+      text-transform: uppercase;
+      font-family: 'itim';
+      font-size: 30px;
+      text-align: center;
+      padding: 40px 0 10px 0;
+      
+    }
+  
+    .newsletter p {
+      color: rgba(255, 255,255, 1);
+      text-align: center;
+      font-family: 'itim';
+      font-size: 30px;
+    }
+  
+    
+   .formulario {
+      text-align: center;
+      padding: 60px;
+      
+    }
+  
+    .formulario #email {
+      background: none;
+      width: 40rem;
+      height: 1px;
+      border: 2px solid rgba(255, 255,255, 1);
+      border-radius: 50px;
+      padding: 40px;
+    }
+  
+    .formulario input::placeholder {
+      display: flex;
+      align-items: center;
+      color: rgba(245, 245, 245, .3);
+      font-size: 25px;
+      padding: 5rem;
+    }
+  
+    .formulario img {
+      position: relative;
+      width: 40px;
+      height: 50px;
+      left: -17.5rem;
+      top: 4.5rem;
+    }
+  
+    .formulario input#sub {
+      position: relative;
+      width: 11rem;
+      padding: 27px;
+      top: -85px;
+      left: 20rem;
+      border-radius: 0 50px 50px 0;
+      border: none;
+      font-size: 27px;
+    }
+    
+    .newsletter-icons img {
+      width: 60px;
+      height: 60px;
+      color: rgba(255, 255,255, 1);
+      margin-top: -70px;
+      padding: 20px;
+    }
+  
+    .newsletter::after {
+      position: absolute;
+      content: "";
+      width: 116rem;
+      height: .1rem;
+      left: -33rem;
+      top: 59rem;
+      background: rgb(255, 255, 255);
+      }
+  
+    footer {
+      position: relative;
+      text-align: center;
+      top: 69rem;
+    }
+    footer img {
+      position: relative;
+      width: 190px;
+      height: 190px;
+      color: rgba(255, 255,255, 1);
+    
+    }
+  
+    footer a {
+     text-align: center;
+     text-decoration: none;
+     color: rgb(90, 88, 88);
+     font-size: 15px;
+     text-transform: uppercase;
+     padding: 40px;
+    }
+  
+    footer p, .thayy {
+      position: relative;
+      color: rgb(255, 255, 255);
+      font-size: 22px;
+      padding: 1px;
+      top: 50px;
+      text-transform: none;
+    }
+  

@@ -1,7 +1,4 @@
 <template>
-
-    <HeaderLandingPageComponent></HeaderLandingPageComponent>
-
      <section class="landing-page">
   
         <div class="left-side">
@@ -28,13 +25,3 @@
 
     </section>
 </template>
-<script>
-    import HeaderLandingPageComponent from './Headers/HeaderLandingPageComponent.vue';
-
-    export default {
-        name: "Home",
-        components: {
-            HeaderLandingPageComponent
-        }
-    }
-</script>
