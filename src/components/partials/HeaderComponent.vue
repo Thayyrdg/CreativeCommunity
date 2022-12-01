@@ -1,42 +1,48 @@
 <template>
-  <nav v-if="path !== 'blog'" class="header">
-    <ul>
-      <li><a href="/home" :class="{ 'active': path === '/home' }">Home</a></li>
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/community">Community</a></li>
-      <li><a href="/auth/sign-in">Sign in</a></li>
-    </ul>
-  </nav>
-  <header v-else>
-    <div class="navbar-left">
-      <div class="full-logo">
-        <a href="/home"><img src="/img/Creative-Community-full-logo.svg" alt=""></a>
+  <header :class="{ 'header': true, 'top-fixed': is_blog === false}">
+    <nav v-if="is_blog !== true" class="navigation">
+      <!-- Navbar others pages -->
+      <div class="navbar-brand navbar-left"></div>
+      <div class="navbar-items navbar-right">
+        <ul>
+          <li class="nav-item"><a href="/home" class="active">Home</a></li>
+          <li class="nav-item"><a href="/blog">Blog</a></li>
+          <li class="nav-item"><a href="/community">Community</a></li>
+          <li class="nav-item"><a href="/auth/sign-in">Sign in</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="navbar-middle">
-      <ul>
-        <li><a href="/home">Home</a></li>
-        <li><a class="active" href="/blog">Blog</a></li>
-        <li><a href="/sign-in">Community</a></li>
-        <li><a href="/newsletter">Newsletter</a></li>
-      </ul>
-    </div>
-    <div class="navbar-right">
-      <div class="button">
-        <a href="/auth/sign-in">Sign in</a>
+    </nav>
+    <!-- Navbar Blog -->
+    <nav v-else>
+      <div class="navbar-left">
+        <div class="full-logo">
+          <a href="/home"><img src="/img/Creative-Community-full-logo.svg" alt=""></a>
+        </div>
       </div>
-    </div>
+      <div class="navbar-middle">
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a class="active" href="/blog">Blog</a></li>
+          <li><a href="/sign-in">Community</a></li>
+          <li><a href="/newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="button">
+          <a href="/auth/sign-in">Sign in</a>
+        </div>
+      </div>
+    </nav>
   </header>
 </template>
+<style lang="scss" scoped>
+@import "../../assets/scss/app.scss";
+</style>
 <script>
 export default {
-  data () {
-    return {
-      path: this.$route
-    }
-  },
-  computed() {
-    console.log(this.path);
+  name: 'HeaderComponent',
+  props: {
+    is_blog: Boolean,
   }
 }
 </script>

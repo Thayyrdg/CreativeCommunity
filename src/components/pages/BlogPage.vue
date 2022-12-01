@@ -1,5 +1,8 @@
 <template>
     <div class="wrapper-all">
+
+      <HeaderComponent :is_blog="true" />
+
         <main class="main-content">
             <section class="prominence">
                 <div class="pic">
@@ -163,5 +166,15 @@
     </div>
 </template>
 <style scoped>
-    @import "../assets/scss/blog.scss";
+    @import "../../assets/scss/app.scss";
 </style>
+<script>
+  import HeaderComponent from "../partials/HeaderComponent.vue";
+
+  export default {
+    name: 'BlogPage',
+    components: {
+      HeaderComponent
+    }
+  }
+</script>
