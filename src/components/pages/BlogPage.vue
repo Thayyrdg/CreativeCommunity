@@ -166,15 +166,25 @@
     </div>
 </template>
 <style scoped>
-    @import "../../assets/scss/app.scss";
+    @import "../../assets/scss/blog.scss";
 </style>
 <script>
+  import axios from 'axios';
+
+
   import HeaderComponent from "../partials/HeaderComponent.vue";
 
   export default {
     name: 'BlogPage',
     components: {
       HeaderComponent
+    },
+    created () {
+      axios.get('/data/users.json').then((response) => {
+        console.log(response);
+      }).catch((err) => {
+        console.error(err);
+      })
     }
   }
 </script>

@@ -1,0 +1,16 @@
+[
+  {
+    "_id": 1,
+    "name": "Eduardo Bessa",
+    "username": "eduubessa",
+    "password": "password",
+    "email": "eduubessa@gmail.com"
+  },
+  {
+    "_id": 2,
+    "name": "Francisca",
+    "username": "kika.para.os.amigos",
+    "password": "password",
+    "email": "kikadosamigos@gmail.com"
+  }
+]
