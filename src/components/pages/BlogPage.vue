@@ -1,10 +1,14 @@
 <template>
-    <div class="wrapper-all">
+    <div class="wrapper-all body">
+      <!-- Header -->
 
-      <HeaderComponent :is_blog="true" />
+        <HeaderComponent :is_blog="true" />
+
 
         <main class="main-content">
+          <div class="bf-prominence-img-color"></div>
             <section class="prominence">
+
                 <div class="pic">
                     <img src="" alt="">
                 </div>
@@ -41,8 +45,9 @@
                 </div>
 
                 <div class="main-new">
-                    <img src="/images/office.jpg" alt="">
-                    <p>
+                    <div class="bg">
+                      <img src="/images/office.jpg" alt="">
+                      <p>
                         Lorem ipsum is common with typesetting and printing businesses. The text did not start with the
                         age
                         of digital businesses as it has been used since 1500s or even earlier. The first use must have
@@ -81,6 +86,7 @@
                         in
                         ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
                         voluptas nulla pariatur?"</p>
+                    </div>
                 </div>
             </section>
 
@@ -141,7 +147,7 @@
                 </div>
                 <h3>Something cool is coming up soon.</h3>
                 <p>Interested? Join our list.</p>
-                <form class="formulario">
+                <form class="forml">
                     <img src="/images/Community-icon.svg" alt="">
                     <input type="email" id="email" name="email" placeholder="name @ exemple . com">
                     <input type="submit" id="sub" name="" value="SUBMIT">
@@ -154,7 +160,7 @@
             </section>
         </main>
 
-        <footer>
+        <footer class="foo">
             <img src="/images/Creative-Community-full-logo-white.svg" alt="">
             <div class="footer-links">
                 <a href="#">web development</a>
@@ -165,8 +171,10 @@
         </footer>
     </div>
 </template>
-<style scoped>
-    @import "../../assets/scss/blog.scss";
+<style lang="scss" scoped>
+@import "../../assets/scss/blog.scss";
+
+
 </style>
 <script>
   import axios from 'axios';

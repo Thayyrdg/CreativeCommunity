@@ -13,10 +13,10 @@
       </div>
     </nav>
     <!-- Navbar Blog -->
-    <nav v-else>
+    <nav v-else class="navbar-blog" style="z-index: 99">
       <div class="navbar-left">
         <div class="full-logo">
-          <a href="/home"><img src="/img/Creative-Community-full-logo.svg" alt=""></a>
+          <a href="/home"><img src="/images/Creative-Community-full-logo.svg" alt=""></a>
         </div>
       </div>
       <div class="navbar-middle">
@@ -36,7 +36,13 @@
   </header>
 </template>
 <style lang="scss" scoped>
+
 @import "../../assets/scss/app.scss";
+@import "../../assets/scss/blog.scss";
+
+
+
+
 </style>
 <script>
 export default {
