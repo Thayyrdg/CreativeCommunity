@@ -12,6 +12,7 @@
         </ul>
       </div>
     </nav>
+
     <!-- Navbar Blog -->
     <nav v-else class="navbar-blog" style="z-index: 99">
       <div class="navbar-left">

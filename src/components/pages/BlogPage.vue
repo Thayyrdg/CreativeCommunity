@@ -1,9 +1,9 @@
-<template>
+x<template>
     <div class="wrapper-all body">
-      <!-- Header -->
+      <!-- Header Ebd -->
 
         <HeaderComponent :is_blog="true" />
-
+        <!-- Header End -->
 
         <main class="main-content">
           <div class="bf-prominence-img-color"></div>
@@ -41,9 +41,7 @@
                         <img src="/images/me.jpeg" alt="">
                         <p>Thaislayne Rodrigues</p>
                     </div>
-
                 </div>
-
                 <div class="main-new">
                     <div class="bg">
                       <img src="/images/office.jpg" alt="">
@@ -85,7 +83,8 @@
                         laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
                         in
                         ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                        voluptas nulla pariatur?"</p>
+                        voluptas nulla pariatur?"
+                      </p>
                     </div>
                 </div>
             </section>
@@ -160,7 +159,7 @@
             </section>
         </main>
 
-        <footer class="foo">
+        <footer class="footer">
             <img src="/images/Creative-Community-full-logo-white.svg" alt="">
             <div class="footer-links">
                 <a href="#">web development</a>
